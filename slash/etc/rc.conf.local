@@ -1,7 +1,8 @@
 sndiod_flags=NO
 apmd_flags="-A"
 dhcpd_flags="em1 em2"
-dnscrypt_proxy_flags="-l /dev/null -R dnscrypt.eu-nl -a 127.0.0.1:40"
+dnscrypt_proxy_flags="-l /dev/null -R fvz-rec-gb-lon-01 -a 127.0.0.1:40"
+dnscrypt_proxy_backup_flags="-l /dev/null -R fvz-rec-ie-du-01 -a 127.0.0.1:60"
 pf=YES
-pkg_scripts="dnscrypt_proxy vnstatd"
+pkg_scripts="dnscrypt_proxy dnscrypt_proxy_backup vnstatd"
 unbound_flags=""
