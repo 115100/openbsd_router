@@ -3,3 +3,4 @@ inet 0.0.0.0 255.255.255.255 NONE mtu 1500 \
 	authname '' authkey '' up
 dest 0.0.0.1
 !/sbin/route add default -ifp pppoe0 0.0.0.1
+description "PPPoE interface for packets to be sent to; connect to modem and add route entry."
