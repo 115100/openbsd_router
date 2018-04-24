@@ -1,6 +1,8 @@
 inet 0.0.0.0 255.255.255.255 NONE mtu 1500 \
     pppoedev em0 authproto chap \
-	authname '' authkey '' up
+    authname 'nunya' authkey 'bizniz' up
 dest 0.0.0.1
+inet6 eui64
+inet6 alias 2001:4d48:ad57:a800:: 56
 !/sbin/route add default -ifp pppoe0 0.0.0.1
-description "PPPoE interface for packets to be sent to; connect to modem and add route entry."
+!/sbin/route add -inet6 default -ifp pppoe0 fe80::%pppoe0

@@ -1,2 +1,4 @@
 inet 192.168.1.1 255.255.255.0 192.168.1.255
-description "LAN interface"
+inet6 eui64
+inet6 alias 2001:4d48:ad57:a800:: 64
+description "LAN"

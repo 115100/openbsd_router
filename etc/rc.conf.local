@@ -1,10 +1,9 @@
-sndiod_flags=NO
 apmd_flags="-A"
 dhcpd_flags="em1 em2"
-dnscrypt_proxy_backup_2_flags="-l /dev/null -a 127.0.0.1:100 -R d0wn-de-ns1"
-dnscrypt_proxy_backup_3_flags="-l /dev/null -a 127.0.0.1:290 -R d0wn-cz-ns1"
-dnscrypt_proxy_backup_flags="-l /dev/null -a 127.0.0.1:60 -R fvz-anyone"
-dnscrypt_proxy_flags="-l /dev/null -a 127.0.0.1:40 -R fvz-anytwo"
+ntpd_flags=""
 pf=YES
-pkg_scripts="dnscrypt_proxy dnscrypt_proxy_backup vnstatd"
-unbound_flags=""
+pkg_scripts=vnstatd
+rtadvd_flags=em1 em2
+sndiod_flags=NO
+unbound_flags=
+xenodm_flags=
